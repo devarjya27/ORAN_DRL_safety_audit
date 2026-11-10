@@ -1,0 +1,25 @@
+schema_version: 1
+environment:
+  control_period_ms: 100
+  episode_steps: 200
+  total_service_packets: 80
+  action_increment_percent: 10
+  min_shares: [20, 20, 10]
+  max_shares: [70, 70, 60]
+  traffic_arrival_rates: [26.0, 8.0, 14.0]
+  traffic_profile: cyclic_surges
+  traffic_regime_steps: 50
+  traffic_surge_multiplier: 2.2
+  traffic_randomize_regime_order: true
+  traffic_regime_jitter_steps: 15
+  urllc_deadline_ms: 5
+  jammer_family: constant
+  jammer_power: 0.55
+  jammer_energy_budget: 40.0
+  jammer_regions: 2
+  channel_fading_std: 0.08
+  channel_mean_reversion: 0.15
+  kpm_delay_steps: 1
+  kpm_loss_probability: 0.02
+  kpm_noise_std: 0.02
+  mitigation_modes: [normal, urllc_reserve, avoid_region_low, avoid_region_high, robust_scheduler]

@@ -1,0 +1,22 @@
+# Experiment outputs, trained checkpoints, and generated reports
+study/
+artifacts/
+results/
+plots/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# Generated analysis and manuscript files
+*.pdf
+*.aux
+*.log
+*.out
+*.png
+*.svg
+*.csv
